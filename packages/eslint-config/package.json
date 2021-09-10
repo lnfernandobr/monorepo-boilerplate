@@ -14,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "../**/**/*.js": "yarn check",
+    "../**/*.js": "yarn check",
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {

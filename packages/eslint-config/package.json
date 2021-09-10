@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint '../**/*.js' --fix",
     "prettier": "prettier --write '../**/*.{js,css,html}'",
-    "check": "npm run lint && npm run prettier"
+    "check": "yarn lint && yarn prettier"
   },
   "husky": {
     "hooks": {
@@ -14,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "../**/**/*.js": "npm run check",
+    "../**/**/*.js": "yarn check",
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {

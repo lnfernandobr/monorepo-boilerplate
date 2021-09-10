@@ -1,3 +1,3 @@
 export const App = () => {
-  return 'Keep Simple!';
+  return "Keep Simple!";
 };

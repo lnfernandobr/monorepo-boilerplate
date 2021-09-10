@@ -1,29 +1,13 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: ['react-app', 'eslint:recommended'],
-  env: {
-    commonjs: true,
-    es6: true,
-    node: true,
-    browser: true,
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-      jsx: false,
-    },
-    sourceType: 'module',
-  },
-  globals: {
-    strapi: true,
-  },
   rules: {
-    indent: ['error', 2, { SwitchCase: 1 }],
+    indent: ['warn', 2, { SwitchCase: 1 }],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
+    quotes: ['warn', 'single'],
     semi: ['error', 'always'],
     'import/no-anonymous-default-export': 'off',
-    'no-unused-vars': 'error',
-    'no-console': 'error',
+    'no-unused-vars': 'warn',
+    'no-console': 'warn',
   },
 };

@@ -7,9 +7,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "before-commit": "cd packages/eslint-config && yarn lint && yarn prettier",
+    "before-commit": "cd packages/eslint-config && yarn check",
     "client": "cd packages/client && yarn start",
-    "server": "cd packages/server/ && node main.js"
+    "server": "cd packages/server/ && node main.js",
+    "prepare": "husky install"
   },
   "workspaces": {
     "packages": [

@@ -1,0 +1,19 @@
+{
+  "name": "monorepo-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate to monorepo projects",
+  "repository": "https://github.com/lnfernandobr/monorepo-boilerplate",
+  "author": "Fernando <lnfernandobr@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "before-commit": "cd packages/eslint-config && yarn lint && yarn prettier",
+    "client": "cd packages/client && yarn start",
+    "server": "cd packages/server/ && node main.js"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

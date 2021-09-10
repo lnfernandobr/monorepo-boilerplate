@@ -1,4 +1,4 @@
 export const App = () => {
-  console.log("Fewfewffweq")
+  console.log("Fewfewffweq");
   return "Keep Simple!";
 };

@@ -9,8 +9,7 @@
   "scripts": {
     "before-commit": "cd packages/eslint-config && yarn check",
     "client": "cd packages/client && yarn start",
-    "server": "cd packages/server/ && node main.js",
-    "prepare": "husky install"
+    "server": "cd packages/server/ && node main.js"
   },
   "workspaces": {
     "packages": [

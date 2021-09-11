@@ -5,16 +5,12 @@
   "private": true,
   "scripts": {
     "lint": "eslint '../**/*.js' --fix",
-    "prettier": "prettier --write '../**/*.{js,css,html}'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "prettier": "prettier --write '../**/*.{js,css,html}'",
+    "prepare": "cd /home/fernando/Documents/Dev/monorepo-boilerplate && husky install"
   },
   "lint-staged": {
-    "../**/**/*.js": "yarn check",
-    "*.js": "eslint --cache --fix"
+    "../**/**/*.js": "yarn prettier",
+    "*.js": "yarn prettier"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
@@ -22,12 +18,11 @@
     "eslint": "^7.14.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "lint-staged": "^11.1.2"
+    "eslint-plugin-react-hooks": "^4.2.0"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^3.0.1",
-    "husky": "^7.0.0",
+    "husky": "7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^1.19.1",
     "prettier-eslint": "^8.8.2",
